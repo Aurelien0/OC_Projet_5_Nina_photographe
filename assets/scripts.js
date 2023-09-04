@@ -13,3 +13,13 @@ $(document).ready(function() {
         tagsPosition: 'top'
     });
 });
+
+// Bloquer le comportement par défaut du formulaire de contact
+document.addEventListener("DOMContentLoaded", function() {
+    var submitButton = document.querySelector('input[type="submit"]');
+    
+    submitButton.addEventListener("click", function(event) {
+      event.preventDefault();
+    });
+  });
+  
